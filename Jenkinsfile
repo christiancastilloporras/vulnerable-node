@@ -23,8 +23,8 @@ pipeline {
                    
          script {      
               try {
-           
-                sh 'shiftleft code-scan -s .'
+                sh 'chmod +x shiftleft'
+                sh './shiftleft code-scan -s .'
            
                } catch (Exception e) {
     
